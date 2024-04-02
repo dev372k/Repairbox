@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2>{{Company}}</h2>
+                <small>
+                    <p>{{CompanyPhone}}</p>
+                    <p>{{CompanyAddress}}</p>
+                </small>
+            </div>
+            <div>
+                <canvas width="50" height="50"></canvas>
+                <img class="qrcode" src="{{Logo}}">
+            </div>
+        </div>
+        <div class="section">
+            <h3>Invoice Information</h3>
+            <div class="info-section">
+                <label>Invoice Number:</label>
+                <span>{{InvoiceNumber}}</span>
+            </div>
+            <div class="info-section">
+                <label>Invoice Date:</label>
+                <span>{{InvoiceDate}}</span>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Customer Information</h3>
+            <div class="info-section">
+                <label>Client Name:</label>
+                <span>{{ClientName}}</span>
+            </div>
+            <div class="info-section">
+                <label>Client Address:</label>
+                <span>{{ClientAddress}}</span>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Device Information</h3>
+            <div class="info-section">
+                <label>Device Model:</label>
+                <span>{{DeviceModel}}</span>
+            </div>
+            <div class="info-section">
+                <label>IMEI:</label>
+                <span>{{IMEI}}</span>
+            </div>
+            <div class="info-section">
+                <label>Serial Number:</label>
+                <span>{{SerialNumber}}</span>
+            </div>
+            <div class="info-section">
+                <label>Quantity:</label>
+                <span>{{Quantity}}</span>
+            </div>
+        </div>
+        <div class="signature">
+            <div class="divider"></div>
+            <p>Authorized Signature</p>
+        </div>
+        <div class="section">
+            <h3>Price</h3>
+            <div class="info-section">
+                <label>Total Amount:</label>
+                <span>{{TotalAmount}}</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
